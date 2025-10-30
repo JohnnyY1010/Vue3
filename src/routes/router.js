@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import AddNote from '../components/AddNote.vue';
 import EditNote from '../components/EditNote.vue';
 import NoteGrid from '../components/NoteGrid.vue';
@@ -12,7 +12,7 @@ const routes = [
 ]
 const router = createRouter({
     routes,
-    history: createWebHistory()
+    history: createWebHashHistory()
 })
 
 export default router
